@@ -117,7 +117,6 @@ public function get_reportinfo(){
 		
 	}
 }
-}
 
 /* End of file filmes_model.php */
 /* Location: ./application/models/filmes_model.php */
