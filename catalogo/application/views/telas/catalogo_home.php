@@ -64,9 +64,9 @@
 			</div>
 			
 
-			<ul class="nav nav-pills">
-			  <li class="active">
-			    <a href="<?php base_url(); ?>">Início</a>
-			  </li>
-			  
-			</ul>
+			<nav id="bt-menu" class="bt-menu">
+				<a href="" class="bt-menu-trigger"><span>Menu</span></a>
+				<ul>
+					<li><a href="<?php echo (base_url().'filmes/cadastrar_filme'); ?>" class="bt-icon icon-user-outline">Cadastrar Filmes</a></li>
+				</ul>
+			</nav>
