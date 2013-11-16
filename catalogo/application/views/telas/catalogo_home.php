@@ -68,5 +68,6 @@
 				<a href="" class="bt-menu-trigger"><span>Menu</span></a>
 				<ul>
 					<li><a href="<?php echo (base_url().'filmes/cadastrar_filme'); ?>" class="bt-icon icon-user-outline">Cadastrar Filmes</a></li>
+					<li><a href="<?php echo (base_url().'filmes/listar_filmes') ?>" class="bt-icon icon-sun">Lista de Filmes</a></li>
 				</ul>
 			</nav>

@@ -45,6 +45,61 @@ class Filmes extends CI_Controller {
 		$this->load->view('catalogo_view', $dados);
 		
 	}
+
+		public function listar_filmes(){
+			
+		$dados = array(
+			
+				'titulo' => 'Lista de filmes',
+				'tela' => 'listagem_filmes',
+			);
+			
+		$this->load->view('catalogo_view', $dados);
+	}
+	
+	public function deletar(){
+		
+		$filme_id = $this->uri->segment(3);
+		
+		if($filme_id != NULL){
+			
+			$query = $this->filmes->getfilme_byid($filme_id);
+			if ($query->num_rows() == 1) {
+					
+				$query = $query->row();
+				$this->filmes->deleta_filme(array('id'=>$query->id), FALSE);
+							
+			} else {
+					
+				//mensagem de erro
+					
+			}
+					
+		}
+		redirect(base_url());
+	}
+	
+	public function editar(){
+		
+		$this->form_validation->set_rules('nome_filme', 'NOME_FILME', 'trim|required|');
+		if($this->form_validation->run() == TRUE){
+			$dados['name_image'] = $this->input->post('nome_filme', TRUE);
+			$dados['link'] = $this->input->post('link');
+			
+			
+			$this->filmes->altera_info($dados, array('id' => $this->input->post('id')));
+			redirect(base_url());
+		}
+		
+		$dados = array(
+			
+				'titulo' => 'Editar informações do filme',
+				'tela' => 'editar_filmes',
+			);
+			
+		$this->load->view('catalogo_view', $dados);
+		
+	}
 	
 }
 

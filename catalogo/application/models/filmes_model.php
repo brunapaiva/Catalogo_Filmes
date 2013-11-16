@@ -34,6 +34,61 @@ class Filmes_model extends CI_Model{
 		}
 		
 	}
+
+		public function getfilme_byid($id = NULL){
+		
+		if ($id != NULL) {
+			
+			$this->db->where('id', $id);
+			$this->db->limit(1);
+			
+			return $this->db->get('filmes');
+			
+		} else {
+			return FALSE;
+		}	
+	}
+	
+	public function deleta_filme($condicao = NULL, $redir = TRUE){
+		
+		if($condicao != NULL && is_array($condicao)){
+			
+			$this->db->delete('filmes', $condicao);
+			
+			if ($this->db->affected_rows() > 0) {
+				
+				//mensagem de sucesso
+				
+			} else {
+				
+				//mensagem de erro
+				
+			}
+			
+			if($redir) redirect(current_url());
+			
+		}
+		
+	}
+	
+	public function altera_info($dados = NULL, $condicao = NULL){
+		
+		if($dados != NULL && is_array($condicao)){
+			
+			$this->db->update('filmes', $dados, $condicao);
+			
+			if ($this->db->affected_rows() > 0) {
+				
+				//mensagem ok
+				
+			} else{
+				
+				//erro
+				
+			}	
+		}
+		
+	}
 	
 
 }
