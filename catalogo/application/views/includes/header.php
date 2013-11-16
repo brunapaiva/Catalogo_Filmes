@@ -13,6 +13,9 @@
   	<link rel="stylesheet" type="text/css" href="http://localhost/catalogo/css/bootstrap.css"/>
     <link rel="stylesheet" type="text/css" href="http://localhost/catalogo/css/bootstrap-responsive.css"/>
     <link rel="stylesheet" type="text/css" href="http://localhost/catalogo/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="http://localhost/catalogo/css/font-awesome.css"/>
+    <link rel="stylesheet" type="text/css" href="http://localhost/catalogo/css/style_menu.css"/>
+     <link rel="stylesheet" type="text/css" href="http://localhost/catalogo/css/icons.css"/>
    
 	<!--[if lte IE 7]><style>.main{display:none;} .support-note .note-ie{display:block;}</style><![endif]-->
 </head>

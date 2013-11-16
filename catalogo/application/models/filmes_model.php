@@ -90,7 +90,33 @@ class Filmes_model extends CI_Model{
 		
 	}
 	
+public function get_reportinfo(){
+		
+		$query = $this->db->query("SELECT * FROM filmes");
+			
+		$terror = 0;
+		$acao = 0;
+		$romance = 0;
+		$animacao = 0;
+					
+		foreach ($query->result() as $row){
+			if($row->categoria == 'Terror'){ $terror++; }
+			if($row->categoria == 'Acao'){ $acao++; }
+			if($row->categoria == 'Romance'){ $romance++; }
+			if($row->categoria == 'Animacao'){ $animacao++; }
+		}
 
+		$dados = array(
+			'terror' => $terror,
+			'acao' => $acao,
+			'romance' => $romance,
+			'animacao' => $animacao
+		);
+			
+		return $dados;
+		
+	}
+}
 }
 
 /* End of file filmes_model.php */
