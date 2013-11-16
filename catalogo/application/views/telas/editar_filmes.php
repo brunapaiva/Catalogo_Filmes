@@ -17,7 +17,9 @@
 							<input type="text" class="input-xxlarge" name="link" id="link" value="<?php echo $query->link ?>" placeholder="Digite o link do trailer" required title="É necessário informar o link para o trailer">
 							<input type="hidden" name="id" id="id" value="<?php echo $query->id ?>">
 							<input type="submit" name="editar" value="Alterar informações" class="btn btn-primary"  />
+							<a href="<?php echo base_url(); ?>" class = "btn btn-default espaco" title = "Voltar para Tela Inicial">Voltar</a>
 						</fieldset>
+
 					</form>
 					
 				</section>

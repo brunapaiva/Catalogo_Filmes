@@ -15,6 +15,8 @@
 												</select>
 												<?php	echo form_upload(array('name'=>'arquivo'), set_value('arquivo')); ?> </br>
 												<input type="submit" name="cadastrar" value="Cadastrar Filme" class="btn btn-primary pull-left"  />
+
+												<a href="<?php echo base_url(); ?>" class = "btn btn-default espaco" title = "Voltar para Tela Inicial">Voltar</a>
 										</fieldset>
 							</form>	
 					</section>

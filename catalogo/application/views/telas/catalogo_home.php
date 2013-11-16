@@ -63,12 +63,14 @@
 				</div>
 			</div>
 			
-
 			<nav id="bt-menu" class="bt-menu">
 				<a href="" class="bt-menu-trigger"><span>Menu</span></a>
 				<ul>
-					<li><a href="<?php echo (base_url().'filmes/cadastrar_filme'); ?>" class="bt-icon icon-user-outline">Cadastrar Filmes</a></li>
-					<li><a href="<?php echo (base_url().'filmes/listar_filmes') ?>" class="bt-icon icon-sun">Lista de Filmes</a></li>
-					<li><a href="<?php echo (base_url().'filmes/report') ?>" class="bt-icon icon-windows">Report</a></li>
+					<li><a href="<?php echo (base_url().'filmes/cadastrar_filme'); ?>"><img src="http://localhost/catalogo/img/add.png"/></a></li>
+					<li><a href="<?php echo (base_url().'filmes/listar_filmes') ?>"><img src="http://localhost/catalogo/img/list.png"/></a></li>
+					<li><a href="<?php echo (base_url().'filmes/report') ?>"><img src="http://localhost/catalogo/img/graph.png"/></a></li>
+					<li><a href="https://github.com/brunapaiva/Catalogo_Filmes"><img src="http://localhost/catalogo/img/github.png"/></a></li>
 				</ul>
 			</nav>
+
+			

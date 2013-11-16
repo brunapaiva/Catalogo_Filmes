@@ -145,14 +145,6 @@
 	-webkit-transform: translate3d(0,100%,0);
 	transform: translate3d(0,100%,0);
 }
-/*
-.bt-menu ul li:nth-child(3) {
-	margin-right: 70px;
-}
-
-.bt-menu ul li:nth-child(4) {
-	margin-left: 70px;
-}*/
 
 .bt-menu.bt-menu-open ul li {
 	position: relative;
@@ -165,33 +157,6 @@
 .bt-menu.bt-menu-open ul li:last-child {
 	-webkit-transition-delay: 0.15s;
 	transition-delay: 0.15s;
-}
-
-.bt-menu.bt-menu-open ul li:first-child{
-	margin-left: 120px;
-	margin-top: 40px;
-}
-
-.bt-menu.bt-menu-open ul li:last-child{
-	margin-left: 100px;
-	margin-top: 40px;
-}
-
-.bt-menu.bt-menu-open ul li:nth-child(2){
-	margin-left: 190px;
-	margin-top: 40px;
-}
-
-.bt-menu.bt-menu-open ul li:nth-child(2),
-.bt-menu.bt-menu-open ul li:nth-last-child(2) {
-	-webkit-transition-delay: 0.1s;
-	transition-delay: 0.1s;
-}
-
-.bt-menu.bt-menu-open ul li:nth-child(3),
-.bt-menu.bt-menu-open ul li:nth-last-child(3) {
-	-webkit-transition-delay: 0.05s;
-	transition-delay: 0.05s;
 }
 
 .bt-menu ul li a {
@@ -216,6 +181,38 @@
 	color: #2980b9;
 }
 
+@media screen and (max-width: 720px) {
+	.bt-menu.bt-menu-open ul li:first-child{
+	margin-left: 120px;
+	
+	margin-bottom: 25px;
+}
+
+.bt-menu.bt-menu-open ul li:last-child{
+	margin-left: 100px;
+	
+	margin-bottom: 25px;
+}
+
+.bt-menu.bt-menu-open ul li:nth-child(2){
+	margin-left: 150px;
+
+	margin-bottom: 25px;
+}
+
+.bt-menu.bt-menu-open ul li:nth-child(2),
+.bt-menu.bt-menu-open ul li:nth-last-child(2) {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+.bt-menu.bt-menu-open ul li:nth-child(3),
+.bt-menu.bt-menu-open ul li:nth-last-child(3) {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+}
+}
+
 @media screen and (max-width: 65.1em) {
 	.bt-menu ul li a {
 		font-size: 90%;
@@ -236,25 +233,29 @@
 	}
 }
 
-@media screen and (max-width: 32em) {
-	.bt-menu-trigger {
-		width: 40px;
-		margin-left: -20px;
-	}
+@media screen and (max-width: 422px) {
+	.bt-menu.bt-menu-open ul li:first-child{
+	margin-left: 10px;
+	
+	margin-bottom: 25px;
+}
 
-	.bt-menu ul li {
-		margin: 0 2%;
-	}
+.bt-menu.bt-menu-open ul li:last-child{
+	margin-left: 10px;
+	
+	margin-bottom: 25px;
+}
 
-	.bt-menu ul li:nth-child(3) {
-		margin-right: 50px;
-	}
+.bt-menu.bt-menu-open ul li:nth-child(2){
+	margin-left: 15px;
+	margin-right: 10px;
+	margin-bottom: 25px;
+}
 
-	.bt-menu ul li:nth-child(4) {
-		margin-left: 50px;
-	}
+.bt-menu.bt-menu-open ul li:nth-child(3){
+	margin-left: 80px;
+	
+	margin-bottom: 25px;
+}
 
-	.bt-menu ul li a:before {
-		font-size: 24px;
-	}
 }

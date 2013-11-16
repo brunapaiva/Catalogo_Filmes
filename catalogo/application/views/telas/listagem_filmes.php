@@ -27,8 +27,8 @@
 									echo ('<td>'.$f->categoria.'</td>');
 									echo ('<td>'.$f->link.'</td>');
 									echo ('<td>
-											<a href="'.base_url().'filmes/editar/'.$f->id.'" title="Editar"><i class="icon-pencil"></i></a>
-											<a href="'.base_url().'filmes/deletar/'.$f->id.'" class="deletar" title="Deletar"><i class="icon-trash"></i></a>
+											<a href="'.base_url().'filmes/editar/'.$f->id.'" title="Editar"><img src="http://localhost/catalogo/img/edit.png"/></a>
+											<a href="'.base_url().'filmes/deletar/'.$f->id.'" class="deletar" title="Deletar"><img src="http://localhost/catalogo/img/delete.png"/></a>
 										   </td>');
 									echo '</tr>';
 									
@@ -39,6 +39,8 @@
 						</tbody>
 						
 					</table>
+					
+					<a href="<?php echo base_url(); ?>" class = "btn btn-default espaco" title = "Voltar para Tela Inicial">Voltar</a>
 					
 				</section>
 				

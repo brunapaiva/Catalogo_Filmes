@@ -2,12 +2,6 @@
 
 class Filmes_model extends CI_Model{
 	
-
-	
-	public function get_all(){
-		return $this->db->get('filmes');
-	}
-	
 	public function do_upload($campo){
 		$config['upload_path'] = './uploads/';
 		$config['allowed_types'] = 'jpg';
@@ -34,8 +28,12 @@ class Filmes_model extends CI_Model{
 		}
 		
 	}
-
-		public function getfilme_byid($id = NULL){
+	
+	public function get_all(){
+		return $this->db->get('filmes');
+	}
+	
+	public function getfilme_byid($id = NULL){
 		
 		if ($id != NULL) {
 			
@@ -90,7 +88,7 @@ class Filmes_model extends CI_Model{
 		
 	}
 	
-public function get_reportinfo(){
+	public function get_reportinfo(){
 		
 		$query = $this->db->query("SELECT * FROM filmes");
 			
@@ -101,9 +99,9 @@ public function get_reportinfo(){
 					
 		foreach ($query->result() as $row){
 			if($row->categoria == 'Terror'){ $terror++; }
-			if($row->categoria == 'Acao'){ $acao++; }
+			if($row->categoria == 'Ação'){ $acao++; }
 			if($row->categoria == 'Romance'){ $romance++; }
-			if($row->categoria == 'Animacao'){ $animacao++; }
+			if($row->categoria == 'Animação'){ $animacao++; }
 		}
 
 		$dados = array(
