@@ -67,7 +67,7 @@ class Filmes extends CI_Controller {
 			if ($query->num_rows() == 1) {
 					
 				$query = $query->row();
-				$this->filmes->deleta_filme(array('id'=>$query->id));
+				$this->filmes->deleta_filme(array('id'=>$query->id), FALSE);
 							
 			} else {
 					

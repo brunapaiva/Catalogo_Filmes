@@ -6,7 +6,7 @@ class MY_Catalogo_system{
 	function inicializacao(){
 	
 		$CI =& get_instance();
-		$CI->load->library(array('form_validation','parser'));
+		$CI->load->library(array('session', 'form_validation','parser'));
 		$CI->load->helper(array('array', 'url', 'text', 'form'));
 	
 	}

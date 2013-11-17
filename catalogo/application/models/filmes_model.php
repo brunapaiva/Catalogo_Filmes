@@ -47,7 +47,7 @@ class Filmes_model extends CI_Model{
 		}	
 	}
 	
-	public function deleta_filme($condicao = NULL){
+	public function deleta_filme($condicao = NULL, $redir = TRUE){
 		
 		if($condicao != NULL && is_array($condicao)){
 			
@@ -62,6 +62,8 @@ class Filmes_model extends CI_Model{
 				//mensagem de erro
 				
 			}
+			
+			if($redir) redirect(current_url());
 			
 		}
 		

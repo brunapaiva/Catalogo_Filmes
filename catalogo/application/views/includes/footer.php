@@ -13,12 +13,21 @@
 
 			$( '#mi-slider' ).catslider();
 			
+
 		});
 
 		$(function(){
 				$('input, textarea').placeholder();
 		});
-		
+		$(function(){
+				
+				$('.deletar').click(function(){
+					
+					if(confirm("Deseja realmente excluir este filme?")) return true; return false; 
+					
+				});
+				
+			});
 	</script>
 	<?php
     	if($tela == 'report'){ echo $report['js']; } 
