@@ -1,0 +1,15 @@
+{
+  "version": "1",
+  "name": "Catálogo de Filmes",
+  "launch_path": "catalogo/index.php",
+  "description": "Aplicativo para visualização de trailes dos filmes, separados por categoria, em formato de catálogo.",
+  "icons": {
+    "128": "http://localhost/catalogo/img/logo.png"
+  },
+  "developer": {
+    "name": "Bruna Paiva  &  Fernanda Helena",
+    "url": "https://github.com/brunapaiva/Catalogo_Filmes"
+  },
+  "installs_allowed_from": ["*"],
+  "default_locale": "en"
+}
